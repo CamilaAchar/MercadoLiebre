@@ -4,6 +4,15 @@
     box-sizing: border-box;
 }    
 
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #EAC926;
+}
+
+p   {
+    font-size: 12px;
+}
+
 a {
     text-decoration: none;
     color: black;
@@ -14,35 +23,16 @@ li {
     list-style: none;
 }
 
-p   {
-    font-size: 12px;
-}
-
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #EAC926;
-}
-
-/*Cabecera - Inicio*/
-
-
-.main-header {
-    margin: 15px;
-}
-
 .main-header-logo-search  {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.logo {
-   flex-grow: 5;
+.main-header {
+    margin: 15px;
 }
 
-.logo img{
-    width: 150px;
-}
 
 .search {
     flex-grow: 5;
@@ -68,11 +58,23 @@ body {
     background-color: white;
 }
 
+.logo {
+    flex-grow: 5;
+ }
+ 
+ .logo img{
+     width: 150px;
+ }
+
 .main-header-aviso-burguer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+}
+
+.main-header-verticalMenue {
+    display: none;
 }
 
 .aviso {
@@ -93,11 +95,6 @@ body {
     border-radius: 3px;
  }
 
-.main-header-verticalMenue {
-    display: none;
-}
-/*Cabecera - Fin*/
-
 .banner {
     width: auto;
 }
@@ -111,15 +108,19 @@ body {
     color: gray;
 }
 
-/*main - inicio*/
 main {
     background-color: #ebebeb;
+}
 
+article {
+    margin-bottom: 10px;
+    background-color: white;
+    box-shadow: 0px 0px 0px rgb(100 100 100);
+    transition: box-shadow 1s;
 }
 
 article img {
     width: 100%;
-
 }
 
 section {
@@ -130,14 +131,6 @@ section {
 section p {
     font-size: 24px;
     margin: 10px auto;
-}
-
-article {
-    margin-bottom: 10px;
-    background-color: white;
-    box-shadow: 0px 0px 0px rgb(100 100 100);
-    transition: box-shadow 1s;
-
 }
 
 article:hover {
@@ -151,7 +144,11 @@ article:hover {
     position: relative;
 }
 
+section article h3 {
+    font-size: 16px;
+    display: none;
 
+} 
 
 .precio-descuento {
     display: flex;
@@ -170,12 +167,6 @@ article:hover {
     flex-grow: 7;
 }
 
-section article h3 {
-    font-size: 16px;
-    display: none;
-
-} 
-
 .icono {
     color: rgb(60, 185, 60);
     border: 1px solid rgb(60, 185, 60);
@@ -193,8 +184,6 @@ section article h3 {
     transform: rotate(-90deg);
 }
 
-/*main - fin*/
-/*Registro - Inicio*/
 
 .formulario-registro {
     background-color: #ebebeb;
@@ -313,9 +302,6 @@ section article h3 {
 .formulario-registro a {
     color: white;
 }
-/*Registro - fin*/
-
-/*Login - Inicio*/
 
 .login {
     background-color: #ebebeb;
@@ -353,9 +339,7 @@ section article h3 {
 .login a {
     color: white;
 }
-/*Login - Fin*/
 
-/*Footer - Inicio*/
 footer {
     background-color: #ebebeb;
     padding-top: 15px;
@@ -399,10 +383,6 @@ footer p {
     text-align: left;
 }
 
-/*Footer - Fin*/
-
-/*Inicio - mediaQuery mobile*/
-
 @media (min-width: 361px){
     .main-header-verticalMenue {
         display: flex;
@@ -435,7 +415,6 @@ footer p {
         display: none;
     }
 
-   
     .articulo:hover h3{
         
         display: initial;
@@ -459,9 +438,6 @@ footer p {
 
  }
 
- /*Fin MediaQuery Mobile*/
-
- /*Inicio MediaQuery Desktop*/
  @media (min-width: 768px){
      .main-header {
          display: flex;
@@ -512,4 +488,4 @@ footer p {
 
 
 }
- /*Fin MediaQuery Desktop*/
+ 
